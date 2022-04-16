@@ -11710,5 +11710,7 @@ hr {
 }
 
 
-/*------------aos.css-------------*/
-
+/*------------font awesome-------------*/
+.fab {
+    font-family: "Font Awesome 5 Brands";
+}
