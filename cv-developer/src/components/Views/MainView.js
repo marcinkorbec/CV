@@ -11,7 +11,6 @@ export const MainView = () => {
       <Header/>
       <PageContent/>
       <Footer/>
-
     </div>
   )
 }
