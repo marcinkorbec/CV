@@ -1,4 +1,5 @@
 import React from "react";
+import {SocialMedia} from "../SocialMedia/SocialMedia";
 
 export const Footer = () => {
   return (
@@ -8,24 +9,7 @@ export const Footer = () => {
           <div className="h4">Marcin Korbecki</div>
           <div className="footer-nav">
             <nav role="navigation">
-              <ul className="nav justify-content-center">
-                <li className="nav-item"><a className="nav-link" href="https://twitter.com/templateflip"
-                                            title="Twitter"><i className="fab fa-twitter"></i><span
-                  className="menu-title sr-only">Twitter</span></a>
-                </li>
-                <li className="nav-item"><a className="nav-link" href="https://www.facebook.com/templateflip"
-                                            title="Facebook"><i className="fab fa-facebook"></i><span
-                  className="menu-title sr-only">Facebook</span></a>
-                </li>
-                <li className="nav-item"><a className="nav-link" href="https://www.instagram.com/templateflip"
-                                            title="Instagram"><i className="fab fa-instagram"></i><span
-                  className="menu-title sr-only">Instagram</span></a>
-                </li>
-                <li className="nav-item"><a className="nav-link" href="https://github.com/templateflip"
-                                            title="Github"><i className="fab fa-github"></i><span
-                  className="menu-title sr-only">Github</span></a>
-                </li>
-              </ul>
+              <SocialMedia/>
             </nav>
           </div>
         </div>

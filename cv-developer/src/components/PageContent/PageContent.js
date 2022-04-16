@@ -1,4 +1,8 @@
 import React from "react";
+import {AboutMe} from "../AboutMe/AboutMe";
+import {Details} from "../Details/Details";
+import {BlueHeader} from "../BlueHeader/BlueHeader";
+import {Skills} from "../Skills/Skills";
 
 export const PageContent = () => {
   return (
@@ -6,112 +10,17 @@ export const PageContent = () => {
       <div className="container">
         <div className="cover shadow-lg bg-white">
           <div className="cover-bg p-3 p-lg-4 text-light">
-            <div className="row">
-              <div className="col-lg-4 col-md-5">
-                <div className="avatar hover-effect bg-white shadow-sm p-1"><img src="https://imagizer.imageshack.com/img923/2025/VB8N59.png" width="200"
-                                                                                 height="200"/></div>
-              </div>
-              <div className="col-lg-8 col-md-7 text-center text-md-start">
-                <h2 className="h1 mt-2" data-aos="fade-left" data-aos-delay="0">Marcin Korbecki</h2>
-                <p data-aos="fade-left" data-aos-delay="100">Junior JavaScript & Web Developer</p>
-                <div className="d-print-none" data-aos="fade-left" data-aos-delay="200"><a
-                  className="btn btn-light text-dark shadow-sm mt-1 me-1" href="right-resume.pdf" target="_blank">Pobierz
-                  CV</a><a className="btn btn-primary shadow-sm mt-1" href="#contact">Napisz do mnie</a></div>
-              </div>
-            </div>
+            <BlueHeader/>
           </div>
           <div className="about-section pt-4 px-3 px-lg-4 mt-1">
             <div className="row">
-              <div className="col-md-6">
-                <h2 className="h3 mb-3">O mnie</h2>
-                <p>Cześć! Jestem Marcin. Jestem pasjonatem programowania i Web Designu.
-                  Posiadam juniorskie umiejętności z zakresu JavaScriptu, TypeScriptu, Baz Danych oraz Reacta.
-                </p>
-              </div>
-              <div className="col-md-5 offset-md-1">
-                <div className="row mt-2">
-                  <div className="col-sm-4">
-                    <div className="pb-1">Wiek</div>
-                  </div>
-                  <div className="col-sm-8">
-                    <div className="pb-1 text-secondary">34</div>
-                  </div>
-                  <div className="col-sm-4">
-                    <div className="pb-1">Email</div>
-                  </div>
-                  <div className="col-sm-8">
-                    <div className="pb-1 text-secondary">poczta@webmarcin.pl</div>
-                  </div>
-                  <div className="col-sm-4">
-                    <div className="pb-1">Tel</div>
-                  </div>
-                  <div className="col-sm-8">
-                    <div className="pb-1 text-secondary">+48 501 360 355</div>
-                  </div>
-                  <div className="col-sm-4">
-                    <div className="pb-1">Adres</div>
-                  </div>
-                  <div className="col-sm-8">
-                    <div className="pb-1 text-secondary">Zabratówka 119c</div>
-                  </div>
-                </div>
-              </div>
+              <AboutMe/>
+              <Details/>
             </div>
           </div>
-
           {/*component Skills*/}
           <hr className="d-print-none"/>
-          <div className="skills-section px-3 px-lg-4">
-            <h2 className="h3 mb-3">Umiejętności</h2>
-            <div className="row">
-              <div className="col-md-6">
-                <div className="mb-2"><span>HTML</span>
-                  <div className="progress my-1">
-                    <div className="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right"
-                         data-aos-delay="100" data-aos-anchor=".skills-section" style={{width: '90%'}} aria-valuenow="90"
-                         aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-                <div className="mb-2"><span>CSS</span>
-                  <div className="progress my-1">
-                    <div className="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right"
-                         data-aos-delay="200" data-aos-anchor=".skills-section" style={{width: '85%'}} aria-valuenow="85"
-                         aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-                <div className="mb-2"><span>JavaScript</span>
-                  <div className="progress my-1">
-                    <div className="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right"
-                         data-aos-delay="300" data-aos-anchor=".skills-section" style={{width: "45%"}} aria-valuenow="45"
-                         aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-6">
-                <div className="mb-2"><span>TypeScript</span>
-                  <div className="progress my-1">
-                    <div className="progress-bar bg-success" role="progressbar" data-aos="zoom-in-right"
-                         data-aos-delay="400" data-aos-anchor=".skills-section" style={{width: "30%"}} aria-valuenow="30"
-                         aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-                <div className="mb-2"><span>MySQl</span>
-                  <div className="progress my-1">
-                    <div className="progress-bar bg-success" role="progressbar" data-aos="zoom-in-right"
-                         data-aos-delay="500" data-aos-anchor=".skills-section" style={{width: "85%"}} aria-valuenow="85"
-                         aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-                <div className="mb-2"><span>Adobe Photoshop</span>
-                  <div className="progress my-1">
-                    <div className="progress-bar bg-success" role="progressbar" data-aos="zoom-in-right"
-                         data-aos-delay="600" data-aos-anchor=".skills-section" style={{width: "75%"}} aria-valuenow="75"
-                         aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+            <Skills/>
           <hr className="d-print-none"/>
           {/*Component Eucation*/}
           <div className="page-break"></div>
@@ -120,33 +29,64 @@ export const PageContent = () => {
             <div className="timeline">
               <div className="timeline-card timeline-card-success card shadow-sm">
                 <div className="card-body">
-                  <div className="h5 mb-1">Kurs Backend Developer <span className="text-muted h6">w MegaKurs JaVaScriptu</span>
+                  <div className="h5 mb-1"> "MegaK.pl" <span className="text-muted h6"> - roczny kurs Full-Stack Developer</span>
                   </div>
-                  <div className="text-muted text-small mb-2">2022 - 2023</div>
-                  <div>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative
-                    approaches to corporate strategy foster collaborative thinking to further the overall value
-                    proposition.
+                  <div className="text-muted text-small mb-2">06.2021 - 08.2022</div>
+                  <div>
+                   <p>Roczny intensywny kurs, w którym styczność z kodem ma miejsce prawie codziennie. Prowadzony jest pod kątem Full-Stack
+                     Developera z naciskiem na back-end. Składa się z 8 etapów i 1 bonusowego etapu dla osób, którym uda się zakwalifikować.</p>
+                    <ul>
+                      <li>JavaScript od podstaw do profesjonalisty,</li>
+                      <li>Node.js od podstaw do profesjonalisty,</li>
+                      <li>Najbardziej znany framework dla Node.js - Express.js,</li>
+                      <li>Bazy danych - MySQL & MongoDB,</li>
+                      <li>TypeScript, czyli nadzbiór JavaScriptu,</li>
+                      <li>Full-stack developer - React,</li>
+                      <li>Node.js Advanced - praktyka i praca,</li>
+                      <li>Praca zespołowa w oparciu o GIT i Scrum</li>
+                    </ul>
+                    <p>Dokładny program i opis kursu: <i><a href="https://www.megak.pl/">https://www.megak.pl/</a></i></p>
                   </div>
                 </div>
               </div>
               <div className="timeline-card timeline-card-success card shadow-sm">
                 <div className="card-body">
-                  <div className="h5 mb-1">Bachelor of Computer Science <span className="text-muted h6">from Regional College</span>
+                  <div className="h5 mb-1">"Studiuje IT" <span className="text-muted h6"> - roczny kurs informatyki</span>
                   </div>
-                  <div className="text-muted text-small mb-2">2007 - 2011</div>
-                  <div>Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion
-                    along the information highway will close the loop on focusing solely on the bottom line.
+                  <div className="text-muted text-small mb-2">12.2020 - 12.2021</div>
+                  <div>
+                    <p>Roczny kurs będący esencją studiów informatycznych. Przedmioty realizowane w ramach kursu to: </p>
+                    <ul>
+                      <li>fundamenty programowania - (Python, C++, Java, JavaScript, PHP),</li>
+                      <li>matematyka dla programistów, bazy danych i aplikacje bazodanowe (SQL, Cypher, Power Bi),</li>
+                      <li>architektura komputerów,</li>
+                      <li>algorytmy i struktury danych,</li>
+                      <li>systemy operacyjne,</li>
+                      <li>sieci komputerowe i bezpieczeństwo,</li>
+                      <li>inżynieria oprogramowania,</li>
+                      <li>prawo w projektach IT,</li>
+                      <li>zarządzanie projektami IT.</li>
+                    </ul>
+                   <p>Dokładny program można obejrzeć tutaj: <i><a href="https://studiuje.it/" target="_blank">https://studiuje.it/</a></i></p>
                   </div>
                 </div>
               </div>
               <div className="timeline-card timeline-card-success card shadow-sm">
                 <div className="card-body">
-                  <div className="h5 mb-1">Science and Mathematics <span
-                    className="text-muted h6">from Mt. High Scool</span></div>
-                  <div className="text-muted text-small mb-2">1995 - 2007</div>
-                  <div>User generated content in real-time will have multiple touchpoints for offshoring. Organically
-                    grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+                  <div className="h5 mb-1">Politechnika Rzeszowska im. Ignacego Łukasiewcza<span className="text-muted h6"> - Zarządzanie i inżynieria produkcji I Stopnia.</span>
                   </div>
+                  <div className="text-muted text-small mb-2">2014 - 2017</div>
+                  <div>
+                    <strong>Opis Kierunku: </strong>
+                    <p>Absolwent posiada wiedzę i umiejętności z zakresu inżynierii produkcji w przemyśle maszynowym oraz ekonomii i zarządzania. Jest przygotowany do projektowania i nadzorowania systemów produkcyjnych, opracowania technologii produkcji w przemyśle maszynowym, zarządzania procesami produkcyjnymi. Potrafi zarządzać transferem technologii i innowacjami. Posiada wiedzę i umiejętności menedżerskie z zakresu, zarządzania przedsiębiorstwem, inwestycjami, kosztami, finansami i kapitałem, zarządzania personelem. Absolwent jest przygotowany do podjęcia pracy w przedsiębiorstwach związanych z eksploatacją i produkcją maszyn bądź ich części, jednostkach doradczych i projektowych związanych z przemysłem maszynowym oraz innych, gdzie wymagana jest wiedza techniczna, ekonomiczna i informatyczna oraz umiejętności organizacyjne. Jest przygotowany do podjęcia studiów II stopnia. Wiedza i umiejętności absolwenta są poszerzone w zakresie wybranej specjalności.</p>
+                  </div>
+                </div>
+              </div>
+              <div className="timeline-card timeline-card-success card shadow-sm">
+                <div className="card-body">
+                  <div className="h5 mb-1">Zespół Szkół nr2 w Rzeszowie<span className="text-muted h6"> - Technik Ekonomista.</span>
+                  </div>
+                  <div className="text-muted text-small mb-2">2004 - 2008</div>
                 </div>
               </div>
             </div>
@@ -154,36 +94,83 @@ export const PageContent = () => {
           <hr className="d-print-none"/>
           {/*Experience*/}
           <div className="work-experience-section px-3 px-lg-4">
-            <h2 className="h3 mb-4">Work Experience</h2>
+            <h2 className="h3 mb-4">Doświadczenie</h2>
             <div className="timeline">
               <div className="timeline-card timeline-card-primary card shadow-sm">
                 <div className="card-body">
-                  <div className="h5 mb-1">Frontend Developer <span
-                    className="text-muted h6">at Creative Agency</span></div>
+                  <div className="h5 mb-1">WAREHOUSE TEAM MEMBER<span className="text-muted h6"> - Shefford w Bedfordshire UK</span>
+                  </div>
+                  <div className="text-muted text-small mb-2">2019 - 2021</div>
+                  <div>
+                    <p>Zakres obowiązków:</p>
+                    <ul>
+                      <li>Pakowanie zamówień</li>
+                      <li>Organizacja magazynu</li>
+                      <li>Poprawa przepływu zapasów ( FIFO )</li>
+                      <li>Utrzymywanie aktualności dokumentów</li>
+                      <li>Zgodność otrzymanych zapasów</li>
+                      <li>Przestrzeganie zasad BHP</li>
+                      <li>Raportowanie do dyrektora firmy</li>
+                      <li>Kontrola jakości</li>
+                      <li>Kompletacja zamówień</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className="timeline-card timeline-card-primary card shadow-sm">
+                <div className="card-body">
+                  <div className="h5 mb-1">Ustawiacz form wtryskowych - technolog<span className="text-muted h6"> - ZMM Max-Pol Rzeszów</span>
+                  </div>
+                  <div className="text-muted text-small mb-2">2011 - 2013</div>
+                  <div>
+                    <p>Do moich obowiązków należało:</p>
+                    <ul>
+                      <li>Ustawienie parametrów wtrysku i uruchomienie procesu wtryskiwania</li>
+                      <li>ocena wizualna jakości produkowanych detali,</li>
+                      <li>ustawianie parametrów procesu na wtryskarkach,</li>
+                      <li>Przygotowanie maszyn wtryskowych do przezbrojeń</li>
+                      <li>Nadzór nad dokumentacją i procesami funkcjonującymi w obszarze wtrysku</li>
+                      <li>Uczestnictwo w nowych projektach, wdrożeniach w zakresie uruchamiania nowej produkcji</li>
+                      <li>Przygotowanie materiałów, maszyn i narzędzi zgodnie z zleceniem produkcyjnym</li>
+                      <li>Optymalizacja, raportowanie i archiwizacja procesów wtrysków</li>
+                      <li>Usuwanie prostych awarii maszyn</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className="timeline-card timeline-card-primary card shadow-sm">
+                <div className="card-body">
+                  <div className="h5 mb-1">Operator Programista CNC - Frezer CNC<span
+                    className="text-muted h6"> w PPHU Garda - Błędowa Zgłobieńska</span></div>
                   <div className="text-muted text-small mb-2">May, 2015 - Present</div>
-                  <div>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative
-                    approaches to corporate strategy foster collaborative thinking to further the overall value
-                    proposition.
+                  <div>
+                    <p>Do moich obowiązków należało:</p>
+                    <ul>
+                      <li>Obsługa i / lub programowanie frezarki cnc,</li>
+                      <li>Znajomość sterowania numerycznego i ustawiania maszyn według oprogramowania HEIDENHAIN,</li>
+                      <li>Prawidłowy wybór narzędzi i materiałów niezbędnych do wykonywanej pracy,</li>
+                      <li>Praca przy innowacyjnych projektach wdrożeniowych,</li>
+                      <li>Uzbrajanie, wymianę narzędzi i ustawianie maszyn CNC na podstawie opracowanych programów lub rysunków.</li>
+                    </ul>
                   </div>
                 </div>
               </div>
               <div className="timeline-card timeline-card-primary card shadow-sm">
                 <div className="card-body">
-                  <div className="h5 mb-1">Graphic Designer <span className="text-muted h6">at Design Studio</span>
+                  <div className="h5 mb-1">Spawacz Tig <span className="text-muted h6"> - WSK-PZL Rzeszów</span>
                   </div>
-                  <div className="text-muted text-small mb-2">June, 2013 - May, 2015</div>
-                  <div>Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion
-                    along the information highway will close the loop on focusing solely on the bottom line.
-                  </div>
-                </div>
-              </div>
-              <div className="timeline-card timeline-card-primary card shadow-sm">
-                <div className="card-body">
-                  <div className="h5 mb-1">Junior Web Developer <span className="text-muted h6">at Indie Studio</span>
-                  </div>
-                  <div className="text-muted text-small mb-2">Jan, 2011 - May, 2013</div>
-                  <div>User generated content in real-time will have multiple touchpoints for offshoring. Organically
-                    grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+                  <div className="text-muted text-small mb-2">2008 - 2013</div>
+                  <div>
+                    <p>Do moich obowiązków należało:</p>
+                    <ul>
+                      <li>Montaż i kontrola kompletności konstrukcji stalowych, przed rozpoczęciem spawania,</li>
+                      <li>Przygotowywanie elementów do spawania przez ich ręczne czyszczenie, prostowanie, ukosowanie, sczepianie,</li>
+                      <li>Wykonywanie połączeń spawanych metodami MIG, MAG, TIG, w zależności od posiadanych umiejętności,</li>
+                      <li>Przestrzeganie technologii spawania oraz stosowanie technik spawania określonych w instrukcji technologicznej spawania,</li>
+                      <li>Zachowywanie właściwej kolejności czynności przy montażu i spawaniu elementów konstrukcji,</li>
+                      <li>Praca z oprzyrządowaniem spawalniczym i dokumentacją techniczną,</li>
+                      <li>Obsługa i nastawy urządzenia spawalniczego.</li>
+                    </ul>
                   </div>
                 </div>
               </div>
